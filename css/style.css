@@ -1,0 +1,21 @@
+.logo{
+    height: 90px;
+    background-color:rgb(57, 71, 85) ;
+    display: flex;
+   align-items: center;
+}
+.logo img{
+width: 80px;
+}
+
+.albums{
+    background:rgb(45, 58, 70);
+}
+.disc-box{
+height: 480px;
+width:200px;
+padding: 25px;
+}
+.disc-box img{
+    width:100%;
+}

@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discs</title>
+    <title>Discs /the 1th Milestone</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
 <div class="container">
+
 <?php
-
 require_once __DIR__ ."/database/database.php";
+?>
+<nav>
+   <div class="logo">
+      <img src="./img/spotify-logo.png" alt="logo">
+   </div>
+</nav>
+
+<main class="albums">
 
 
+<?php
 foreach($database as $disc){
 
     
@@ -21,17 +32,25 @@ foreach($database as $disc){
       $author ="{$disc['author']}<br/>";
       $genre= "{$disc['genre']}<br/>";
       $year =  "{$disc['year']}<br/>";
-
-     echo " <main class='albums'> 
-            $poster
-            $title
-            $author
-            $genre
-            $year
-     </main>";
-  
 ?>
+      <div class="disc-container">
+          <div class="disc-box">
+              <?php echo "$poster"?>
+              <?php echo "$title"?>
+              <div class="title-informations">
+                  <?php echo "$author"?>
+                  <?php echo "$year"?>
+              </div>
+          </div>
+      </div>
+   
+            
+<?php  
+
 };
+?>
+
+</main>
 </div>
 </body>
 </html>
