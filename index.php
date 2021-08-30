@@ -34,7 +34,7 @@ foreach($database as $disc){
 ?>
 
     <main class="albums">
-      <div class="disc-container col-lg-12">
+      <div class="disc-container col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <div class="disc-box">
               <?php echo "$poster"?>
              <div class="title"><?php echo "$title"?></div>
