@@ -20,7 +20,6 @@ require_once __DIR__ ."/database/database.php";
    </div>
 </nav>
 
-<main class="albums">
 
 
 <?php
@@ -33,24 +32,26 @@ foreach($database as $disc){
       $genre= "{$disc['genre']}<br/>";
       $year =  "{$disc['year']}<br/>";
 ?>
-      <div class="disc-container">
+
+    <main class="albums">
+      <div class="disc-container col-lg-12">
           <div class="disc-box">
               <?php echo "$poster"?>
-              <?php echo "$title"?>
-              <div class="title-informations">
+             <div class="title"><?php echo "$title"?></div>
+              <div class="box-informations">
                   <?php echo "$author"?>
                   <?php echo "$year"?>
               </div>
           </div>
       </div>
-   
+      </main>
             
 <?php  
 
 };
 ?>
 
-</main>
+
 </div>
 </body>
 </html>

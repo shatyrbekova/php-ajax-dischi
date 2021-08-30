@@ -1,21 +1,45 @@
-.logo{
-    height: 90px;
-    background-color:rgb(57, 71, 85) ;
-    display: flex;
-   align-items: center;
+.logo {
+  height: 90px;
+  background-color: rgb(57, 71, 85);
+  display: flex;
+  align-items: center;
 }
-.logo img{
-width: 80px;
+.logo img {
+  width: 80px;
 }
 
-.albums{
-    background:rgb(45, 58, 70);
+.albums {
+  background: rgb(45, 58, 70);
 }
-.disc-box{
-height: 480px;
-width:200px;
-padding: 25px;
+.disc-container {
+  text-align: center;
+  background: rgb(45, 58, 70);
 }
-.disc-box img{
-    width:100%;
+.disc-box {
+  background-color: rgb(57, 71, 85);
+  height: 450px;
+  padding: 50px;
+  margin: 20px ;
+}
+.disc-box img {
+  width: 100%;
+}
+.title {
+  font-size: 24px;
+  padding: 12px;
+  line-height: 100%;
+  margin-top: 12px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+.box-informations {
+  margin-top: 12px;
+  color: rgb(119, 119, 108);
+  font-size: 20px;
+}
+
+.col-lg-12{
+    width: 20%;
+    float: left;
 }
