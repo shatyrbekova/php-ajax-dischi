@@ -6,9 +6,9 @@
 require_once __DIR__ . "/../database/database.php";
 header('Content-Type: application/json');
 echo json_encode($database);
-
-$getAlbumForGenre = array_filter($database, function($album)  use ($genre) ){
-    return $album['genre'] === $genre;
-};
+   $albumType = 'Pop';
+   $getAlbumForGenre = array_filter($database, function($album)  use ($albumType) {
+   return $album['genre'] === $albumType;
+});
 var_dump($getAlbumForGenre);
 ?>
