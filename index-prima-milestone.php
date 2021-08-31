@@ -1,3 +1,7 @@
+<!-- Prima Milestone:
+Stampiamo i dischi solo con l’utilizzo di PHP, che stampa direttamente i dischi in pagina: 
+al caricamento della pagina ci saranno tutti i dischi. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +12,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
 
 <div class="container">
 
