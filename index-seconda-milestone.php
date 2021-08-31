@@ -1,3 +1,8 @@
+<!-- 
+Seconda Milestone:
+Al caricamento della pagina axios chiederà,
+attraverso una chiamata api, i dischi a php e li stamperà attraverso Vue.
+Utilizziamo Vue con CDN e axios sempre da CDN. (come visto oggi in live coding => https://github.com/ott-fogliata/boolean-live-php) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +24,7 @@
 
         <main class="albums">
 
-            <div class="disc-container col-lg-12" v-for="disc in discs">
+            <div class="disc-container col-md-12 col-lg-12" v-for="disc in discs">
                 <div class="disc-box">
                    
                     <img :src="disc.poster" alt="">

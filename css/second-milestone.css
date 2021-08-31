@@ -9,10 +9,14 @@
   }
   .albums {
     background: rgb(45, 58, 70);
+  
+   
   }
   .disc-container {
     text-align: center;
     background: rgb(45, 58, 70);
+ 
+   
   }
   .disc-box {
     background-color: rgb(57, 71, 85);
@@ -42,3 +46,9 @@
     width: 20%;
     float: left;
 }
+@media (max-width: 992px){
+    .col-md-12{
+      width: calc(100% / 3);
+      float:left;
+    }
+  };
